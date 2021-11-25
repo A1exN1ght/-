@@ -1,0 +1,117 @@
+//Main
+
+.main__item {
+    padding: 100px 0 50px 0;
+    display: flex;
+    border-bottom: 1px solid #fff ;
+}
+
+//Text
+
+.main__body {
+    padding-right: 30px;
+    flex: 1 1 62%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.body__title{
+    margin-bottom: 30px;
+}
+
+
+.body__info p {
+    margin-bottom: 30px;
+}
+
+.body__info p:last-child{
+    margin-bottom: 0;
+}
+
+//Image
+
+.main__image {
+    border-left: 1px solid #fff ;
+    padding-left: 30px;
+    display:flex;
+    justify-content: flex-start;
+    align-self: center;
+    flex: 0 1 50%;
+}
+
+.image__block {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main__image img{
+    margin-bottom: 30px;
+    max-width: 300px;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 10px 10px rgb(28, 29, 28);
+}
+
+.main__image img::after{
+    content: '';
+    max-width: 480px;  
+}
+
+.main__image img:last-child{
+    margin-bottom: 0;
+}
+
+.main__image img:hover{
+    transition: 1s;
+    max-width: 480px;    
+}
+
+.main__image img:not(:hover){
+    transition: 1s;   
+}
+
+//Link
+
+.main__link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #fff ;
+}
+
+.link__btn {
+    margin: 25px 0;
+    padding: 0 80px;
+    background-color: rgb(65, 81, 116);
+    border: 4px solid rgb(28, 29, 28);
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px rgb(28, 29, 28);
+}
+
+.link {
+    font-family: 'Amatic SC', cursive;
+    font-style: italic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 80px;
+    color: rgb(182, 255, 182);
+}
+
+.link__btn:hover {
+    transition: .3s linear;
+    background-color: rgb(175, 73, 73);
+    box-shadow: 0 0 18px 14px rgb(28, 29, 28);
+}
+
+.link__btn:not(:hover){
+    transition: .5s linear;
+}
+
+.link__btn:active{
+    transition: .3s;
+    padding: 0 75px;
+    background-color: rgb(180, 52, 52);
+    box-shadow: 0 0 28px 18px rgb(28, 29, 28);
+}

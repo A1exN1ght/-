@@ -1,0 +1,53 @@
+//Header
+
+.header {
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 5px 0;
+    background-color: rgb(65, 81, 116);
+    border-bottom: 1px solid rgba(0, 204, 255, 0.7);
+}
+
+.header__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+//Logo
+
+.logo__link {
+    border-radius: 50%;
+    flex: 0 1 100%;
+}
+
+//Menu
+
+.item__menu{
+    padding: 16px 0;
+    display: flex;
+    flex: 0 1 40%;
+    justify-content: space-between;
+    line-height: 28px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.item__menu a{
+    font-family: 'Amatic SC', cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .3s linear;
+    color: rgba(192, 243, 205, 0.8);
+
+}
+
+.item__menu span {
+    border-right: 1px solid rgba(0, 204, 255, 0.7);
+}
+
+.item__menu a:hover{
+    color: rgb(0, 255, 64);
+}
